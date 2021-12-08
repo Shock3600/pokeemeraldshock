@@ -3366,25 +3366,31 @@ static const struct TrainerMon sParty_Drake[] = {
 
 static const struct TrainerMon sParty_Roxanne1[] = {
     {
-    .iv = 100,
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_EASY,
+	.lvl = 12,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_LILEEP,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .moves = {MOVE_MEGA_DRAIN, MOVE_TOXIC, MOVE_LEECH_SEED, MOVE_PROTECT}
     },
     {
-    .iv = 100,
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_EASY,
     .lvl = 12,
-    .species = SPECIES_GEODUDE,
+	.ability = ABILITY_SLOT_1,
+    .species = SPECIES_ANORITH,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .moves = {MOVE_ROCK_THROW, MOVE_BUG_BITE, MOVE_AQUA_JET, MOVE_BRICK_BREAK}
     },
     {
-    .iv = 200,
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_EASY,
     .lvl = 15,
+	.ability = ABILITY_SLOT_1,
     .species = SPECIES_NOSEPASS,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE, MOVE_ROCK_TOMB}
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_ROCK_SLIDE, MOVE_TOXIC, MOVE_PROTECT, MOVE_FIRE_PUNCH}
     }
 };
 
