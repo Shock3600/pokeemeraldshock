@@ -3385,7 +3385,7 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_EASY,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 15,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_NOSEPASS,
@@ -3415,7 +3415,7 @@ static const struct TrainerMon sParty_Brawly1[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_EASY,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 18,
 	.ability = ABILITY_SLOT_2,
     .species = SPECIES_MAKUHITA,
@@ -3426,32 +3426,41 @@ static const struct TrainerMon sParty_Brawly1[] = {
 
 static const struct TrainerMon sParty_Wattson1[] = {
     {
-    .iv = 200,
-    .lvl = 20,
-    .species = SPECIES_VOLTORB,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_ROLLOUT, MOVE_SPARK, MOVE_SELF_DESTRUCT, MOVE_SHOCK_WAVE}
-    },
-    {
-    .iv = 200,
-    .lvl = 20,
-    .species = SPECIES_ELECTRIKE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHOCK_WAVE, MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_HOWL}
-    },
-    {
-    .iv = 220,
+    .build = TRAINER_MON_SPEED_SPEC,
+	.difficulty = TRAINER_EASY,
     .lvl = 22,
-    .species = SPECIES_MAGNETON,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SUPERSONIC, MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM}
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_VOLTORB,
+    .heldItem = ITEM_LIGHT_CLAY,
+    .moves = {MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_SELF_DESTRUCT, MOVE_THUNDERBOLT}
     },
     {
-    .iv = 250,
+    .build = TRAINER_MON_SPEED_SPEC,
+	.difficulty = TRAINER_EASY,
+    .lvl = 22,
+	.ability = ABILITY_SLOT_1,
+    .species = SPECIES_PIKACHU,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_THUNDERBOLT, MOVE_SURF, MOVE_GRASS_KNOT, MOVE_EXTREME_SPEED}
+    },
+    {
+    .build = TRAINER_MON_HP_SPDEF,
+	.difficulty = TRAINER_EASY,
     .lvl = 24,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_CHINCHOU,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_SURF, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_THUNDER_WAVE}
+    },
+    {
+    .build = TRAINER_MON_SPEED_SPEC,
+	.difficulty = TRAINER_MEDIUM,
+	.hiddenPower - TYPE_ICE,
+    .lvl = 26,
+	.ability = ABILITY_SLOT_1,
     .species = SPECIES_MANECTRIC,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_SHOCK_WAVE, MOVE_HOWL}
+    .heldItem = ITEM_WISE_GLASSES,
+    .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_MAGNET_RISE, MOVE_HIDDEN_POWER}
     }
 };
 
