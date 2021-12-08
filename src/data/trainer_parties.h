@@ -6964,6 +6964,8 @@ static const struct TrainerMon sParty_MayRoute103Mudkip[] = {
     .iv = 0,
     .lvl = 5,
     .species = SPECIES_TREECKO,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_POUND, MOVE_LEAFAGE, MOVE_LEER},
     }
 };
 
