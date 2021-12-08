@@ -3427,7 +3427,7 @@ static const struct TrainerMon sParty_Brawly1[] = {
 static const struct TrainerMon sParty_Wattson1[] = {
     {
     .build = TRAINER_MON_SPEED_SPEC,
-	.difficulty = TRAINER_EASY,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 22,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_VOLTORB,
@@ -3436,7 +3436,7 @@ static const struct TrainerMon sParty_Wattson1[] = {
     },
     {
     .build = TRAINER_MON_SPEED_SPEC,
-	.difficulty = TRAINER_EASY,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 22,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_PIKACHU,
@@ -3445,7 +3445,7 @@ static const struct TrainerMon sParty_Wattson1[] = {
     },
     {
     .build = TRAINER_MON_HP_SPDEF,
-	.difficulty = TRAINER_EASY,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 24,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_CHINCHOU,
@@ -3454,7 +3454,7 @@ static const struct TrainerMon sParty_Wattson1[] = {
     },
     {
     .build = TRAINER_MON_SPEED_SPEC,
-	.difficulty = TRAINER_MEDIUM,
+	.difficulty = TRAINER_HARD,
 	.hiddenPower - TYPE_ICE,
     .lvl = 26,
 	.ability = ABILITY_SLOT_1,
@@ -3467,7 +3467,7 @@ static const struct TrainerMon sParty_Wattson1[] = {
 static const struct TrainerMon sParty_Flannery1[] = {
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_EASY,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 26,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_NINETALES,
@@ -3476,7 +3476,7 @@ static const struct TrainerMon sParty_Flannery1[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_EASY,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 26,
 	.ability = ABILITY_SLOT_2,
     .species = SPECIES_NUMEL,
@@ -3485,7 +3485,7 @@ static const struct TrainerMon sParty_Flannery1[] = {
     },
     {
     .build = TRAINER_MON_PHYS,
-	.difficulty = TRAINER_EASY,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 28,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_COMBUSKEN,
@@ -3494,7 +3494,7 @@ static const struct TrainerMon sParty_Flannery1[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_MEDIUM,
+	.difficulty = TRAINER_HARD,
     .lvl = 31,
 	.ability = ABILITY_SLOT_2,
     .species = SPECIES_TORKOAL,
@@ -3505,32 +3505,49 @@ static const struct TrainerMon sParty_Flannery1[] = {
 
 static const struct TrainerMon sParty_Norman1[] = {
     {
-    .iv = 200,
-    .lvl = 27,
-    .species = SPECIES_SPINDA,
+    .build = TRAINER_MON_PHYS,
+	.difficulty = TRAINER_HARD,
+    .lvl = 30,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_KECLEON,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_TEETER_DANCE, MOVE_PSYBEAM, MOVE_FACADE, MOVE_ENCORE}
+    .moves = {MOVE_SHADOW_SNEAK, MOVE_DRAIN_PUNCH, MOVE_RECOVER, MOVE_THUNDER_WAVE}
     },
     {
-    .iv = 200,
-    .lvl = 27,
-    .species = SPECIES_VIGOROTH,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SLASH, MOVE_FACADE, MOVE_ENCORE, MOVE_FEINT_ATTACK}
-    },
-    {
-    .iv = 200,
-    .lvl = 29,
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_HARD,
+    .lvl = 32,
+	.ability = ABILITY_SLOT_2,
     .species = SPECIES_LINOONE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SLASH, MOVE_BELLY_DRUM, MOVE_FACADE, MOVE_HEADBUTT}
+    .heldItem = ITEM_FIGY_BERRY,
+    .moves = {MOVE_BELLY_DRUM, MOVE_EXTREME_SPEED, MOVE_THROAT_CHOP, MOVE_SEED_BOMB}
     },
     {
-    .iv = 250,
-    .lvl = 31,
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_HARD,
+    .lvl = 32,
+	.ability = ABILITY_SLOT_2,
+    .species = SPECIES_DODRIO,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_SWORDS_DANCE, MOVE_BRAVE_BIRD, MOVE_FACADE, MOVE_JUMP_KICK}
+    },
+    {
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_HARD,
+    .lvl = 30,
+	.ability = ABILITY_SLOT_1,
+    .species = SPECIES_WIGGLYTUFF,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_WISH, MOVE_PROTECT, MOVE_BATON_PASS, MOVE_DAZZLING_GLEAM}
+    },
+    {
+    .build = TRAINER_MON_PHYS,
+	.difficulty = TRAINER_HARDER,
+    .lvl = 36,
+	.ability = ABILITY_SLOT_1,
     .species = SPECIES_SLAKING,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_COUNTER, MOVE_YAWN, MOVE_FACADE, MOVE_FEINT_ATTACK}
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = {MOVE_GIGA_IMPACT, MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_KNOCK_OFF}
     }
 };
 
