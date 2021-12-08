@@ -364,7 +364,7 @@ PetalburgCity_Gym_EventScript_NormanPostBattle::
 	compare VAR_RESULT, TRUE
 	goto_if_eq PetalburgCity_Gym_EventScript_GiveEnigmaBerry
 	goto_if_unset FLAG_RECEIVED_TM42, PetalburgCity_Gym_EventScript_GiveFacade2
-	goto_if_unset FLAG_UNUSED_0x054, PetalburgCity_Gym_EventScript_GiveMegaBracelet2
+	goto_if_unset FLAG_MEGA_BRACELET_GET, PetalburgCity_Gym_EventScript_GiveMegaBracelet2
 	goto_if_set FLAG_SYS_GAME_CLEAR, PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough
 	msgbox PetalburgCity_Gym_Text_DadGoingToKeepTraining, MSGBOX_DEFAULT
 	release
@@ -459,7 +459,7 @@ PetalburgCity_Gym_EventScript_GiveMegaBracelet::
 	giveitem ITEM_MEGA_BRACELET
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_BagIsFull
-	setflag FLAG_UNUSED_0x054
+	setflag FLAG_MEGA_BRACELET_GET
 	msgbox PetalburgCity_Gym_Text_ExplainFacade, MSGBOX_DEFAULT
 	return
 
