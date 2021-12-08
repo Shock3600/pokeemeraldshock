@@ -3396,25 +3396,31 @@ static const struct TrainerMon sParty_Roxanne1[] = {
 
 static const struct TrainerMon sParty_Brawly1[] = {
     {
-    .iv = 100,
-    .lvl = 16,
-    .species = SPECIES_MACHOP,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_KARATE_CHOP, MOVE_LOW_KICK, MOVE_SEISMIC_TOSS, MOVE_BULK_UP}
-    },
-    {
-    .iv = 100,
-    .lvl = 16,
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_EASY,
+	.lvl = 16,
+	.ability = ABILITY_SLOT_1,
     .species = SPECIES_MEDITITE,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_FOCUS_PUNCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_BULK_UP}
+    .moves = {MOVE_BRICK_BREAK, MOVE_ZEN_HEADBUTT, MOVE_THUNDER_PUNCH, MOVE_BULLET_PUNCH}
     },
     {
-    .iv = 200,
-    .lvl = 19,
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_EASY,
+    .lvl = 16,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_HERACROSS,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_PIN_MISSILE, MOVE_BRICK_BREAK, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE}
+    },
+    {
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_EASY,
+    .lvl = 18,
+	.ability = ABILITY_SLOT_2,
     .species = SPECIES_MAKUHITA,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_ARM_THRUST, MOVE_VITAL_THROW, MOVE_REVERSAL, MOVE_BULK_UP}
+    .heldItem = ITEM_FLAME_ORB,
+    .moves = {MOVE_FAKE_OUT, MOVE_FACADE, MOVE_BRICK_BREAK, MOVE_THUNDER_PUNCH}
     }
 };
 
