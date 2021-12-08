@@ -3466,32 +3466,40 @@ static const struct TrainerMon sParty_Wattson1[] = {
 
 static const struct TrainerMon sParty_Flannery1[] = {
     {
-    .iv = 200,
-    .lvl = 24,
-    .species = SPECIES_NUMEL,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_TAKE_DOWN, MOVE_MAGNITUDE, MOVE_SUNNY_DAY}
-    },
-    {
-    .iv = 200,
-    .lvl = 24,
-    .species = SPECIES_SLUGMA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_SMOG, MOVE_LIGHT_SCREEN, MOVE_SUNNY_DAY}
-    },
-    {
-    .iv = 250,
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_EASY,
     .lvl = 26,
-    .species = SPECIES_CAMERUPT,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_NINETALES,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_TACKLE, MOVE_SUNNY_DAY, MOVE_ATTRACT}
+    .moves = {MOVE_FLAMETHROWER, MOVE_SOLAR_BEAM, MOVE_WILL_O_WISP, MOVE_MEMENTO}
     },
     {
-    .iv = 250,
-    .lvl = 29,
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_EASY,
+    .lvl = 26,
+	.ability = ABILITY_SLOT_2,
+    .species = SPECIES_NUMEL,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_GROWTH, MOVE_STOCKPILE, MOVE_FLAMETHROWER, MOVE_EARTH_POWER}
+    },
+    {
+    .build = TRAINER_MON_PHYS,
+	.difficulty = TRAINER_EASY,
+    .lvl = 28,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_COMBUSKEN,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_BLAZE_KICK, MOVE_THUNDER_PUNCH, MOVE_SWORDS_DANCE}
+    },
+    {
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_MEDIUM,
+    .lvl = 31,
+	.ability = ABILITY_SLOT_2,
     .species = SPECIES_TORKOAL,
-    .heldItem = ITEM_WHITE_HERB,
-    .moves = {MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_BODY_SLAM, MOVE_ATTRACT}
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_LAVA_PLUME, MOVE_SOLAR_BEAM, MOVE_YAWN, MOVE_SUNNY_DAY}
     }
 };
 
