@@ -3409,7 +3409,7 @@ static const struct TrainerMon sParty_Brawly1[] = {
 	.difficulty = TRAINER_EASY,
     .lvl = 16,
 	.ability = ABILITY_SLOT_1,
-    .species = SPWECIES_MACHOP,
+    .species = SPECIES_MACHOP,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_COUNTER, MOVE_BRICK_BREAK, MOVE_KNOCK_OFF, MOVE_ICE_PUNCH}
     },
