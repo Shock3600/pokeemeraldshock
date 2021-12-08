@@ -423,6 +423,7 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	setflag FLAG_DEFEATED_PETALBURG_GYM
 	setvar VAR_PETALBURG_GYM_STATE, 7
 	setflag FLAG_BADGE05_GET
+	setvar VAR_BIRCH_LAB_STATE, 1
 	special ResetHealLocationFromDewford
 	call EventScript_HideMrBriney
 	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
@@ -456,11 +457,9 @@ PetalburgCity_Gym_EventScript_GiveFacade::
 	return
 
 PetalburgCity_Gym_EventScript_GiveMegaBracelet::
+	msgbox PetalburgCity_Gym_Text_One_Last_Gift, MSGBOX_DEFAULT
 	giveitem ITEM_MEGA_BRACELET
-	compare VAR_RESULT, FALSE
-	goto_if_eq Common_EventScript_BagIsFull
-	setflag FLAG_MEGA_BRACELET_GET
-	msgbox PetalburgCity_Gym_Text_ExplainFacade, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Gym_Text_Explain_Mega_Ring
 	return
 
 PetalburgCity_Gym_EventScript_WallysDadArrivesNorth::
@@ -1400,6 +1399,20 @@ PetalburgCity_Gym_Text_ExplainFacade:
 	.string "or burned.\p"
 	.string "It might be able to turn a bad\n"
 	.string "situation into an advantage.$"
+
+PetalburgCity_Gym_Text_One_Last_Gift:
+	.string "Now, here is one last gift.\n"
+	.string "You have grown as a trainer,\n"
+	.string "and this will help\n"
+	.string "your POKEMON grow with you.$"
+	
+PetalburgCity_Gym_Text_Explain_Mega_Ring:
+	.string "With this MEGA RING,\n"
+	.string "you can MEGA EVOLVE your\n"
+	.string "POKEMON if they are holding\n"
+	.string "the right MEGA STONE.\p"
+	.string "Press START before\n"
+	.string "selecting a move.$:
 
 PetalburgCity_Gym_Text_DadHappyAndSad:
 	.string "DAD: As the GYM LEADER, I can't\n"
