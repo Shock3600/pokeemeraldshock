@@ -3381,7 +3381,7 @@ static const struct TrainerMon sParty_Roxanne1[] = {
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_ANORITH,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_ROCK_THROW, MOVE_BUG_BITE, MOVE_AQUA_JET, MOVE_BRICK_BREAK}
+    .moves = {MOVE_ROCK_THROW, MOVE_X_SCISSOR, MOVE_AQUA_JET, MOVE_BRICK_BREAK}
     },
     {
     .build = TRAINER_MON_DEFENSES,
@@ -3408,10 +3408,10 @@ static const struct TrainerMon sParty_Brawly1[] = {
     .build = TRAINER_MON_SPEED_PHYS,
 	.difficulty = TRAINER_EASY,
     .lvl = 16,
-	.ability = ABILITY_HIDDEN,
-    .species = SPECIES_HERACROSS,
+	.ability = ABILITY_SLOT_1,
+    .species = SPWECIES_MACHOP,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_PIN_MISSILE, MOVE_BRICK_BREAK, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE}
+    .moves = {MOVE_COUNTER, MOVE_BRICK_BREAK, MOVE_KNOCK_OFF, MOVE_ICE_PUNCH}
     },
     {
     .build = TRAINER_MON_DEFENSES,
