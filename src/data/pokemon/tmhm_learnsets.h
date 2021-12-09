@@ -6593,6 +6593,7 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM25_THUNDER)
                                             | TMHM(TM24_THUNDERBOLT)
                                             | TMHM(TM06_TOXIC)
+											| TMHM(HM04_STRENGTH)
                                             | TMHM(TM03_WATER_PULSE)),
 
     [SPECIES_LINOONE]     = TMHM_LEARNSET(TMHM(TM45_ATTRACT)
