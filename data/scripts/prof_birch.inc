@@ -44,43 +44,17 @@ ProfBirch_EventScript_MoveToRoute103::
 ProfBirch_EventScript_RatePokedexOrRegister::
 	lock
 	faceplayer
+	goto_if_set FLAG_BADGE05_GET, LittlerootTown_ProfessorBirch_EventScript_Give_Mega_Stone0
 	goto_if_unset FLAG_HAS_MATCH_CALL, ProfBirch_EventScript_AskRatePokedex
 	goto_if_unset FLAG_ENABLE_PROF_BIRCH_MATCH_CALL, EventScript_RegisterProfBirch
 
 ProfBirch_EventScript_AskRatePokedex::
-	goto_if_set FLAG_BADGE05_GET, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_1
 	msgbox gBirchDexRatingText_AreYouCurious, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq ProfBirch_EventScript_DeclineRating
 	call ProfBirch_EventScript_RatePokedex
 	release
 	end
-
-LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_1::
-	goto_if_unset FLAG_BIRCH_STONE_GET LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_2
-	return
-
-LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_2::
-		msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Five_Badges, MSGBOX_DEFAULT
-		switch VAR_STARTER_MON
-		case 0, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Sceptile
-		case 1, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Blaziken
-		case 2, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Swampert
-		msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Power_Of_Mega_Stones, MSGBOX_DEFAULT
-		setflag FLAG_BIRCH_STONE_GET
-		end
-
-LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Sceptile::
-	giveitem ITEM_SCEPTILITE, 1
-	return
-
-LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Blaziken::
-	giveitem ITEM_BLAZIKENITE, 1
-	return
-
-LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Swampert::
-	giveitem ITEM_SWAMPERTITE, 1
-	return
 
 ProfBirch_EventScript_DeclineRating::
 	msgbox gBirchDexRatingText_Cancel, MSGBOX_DEFAULT
@@ -115,13 +89,38 @@ ProfBirch_EventScript_RatePokedex::
 	msgbox gBirchDexRatingText_OnANationwideBasis, MSGBOX_DEFAULT
 	return
 	
-	
-LittlerootTown_ProfessorBirchsLab_EventScript_Five_Badges:
+LittlerootTown_ProfessorBirch_EventScript_Give_Mega_Stone0::
+	goto_if_unset FLAG_BIRCH_STONE_GET, LittlerootTown_ProfessorBirch_EventScript_Give_Mega_Stone
+	return
+
+LittlerootTown_ProfessorBirch_EventScript_Give_Mega_Stone::
+		msgbox LittlerootTown_ProfessorBirch_EventScript_Five_Badges, MSGBOX_DEFAULT
+		switch VAR_STARTER_MON
+		case 0, LittlerootTown_ProfessorBirch_EventScript_Give_Mega_Stone_Sceptile
+		case 1, LittlerootTown_ProfessorBirch_EventScript_Give_Mega_Stone_Blaziken
+		case 2, LittlerootTown_ProfessorBirch_EventScript_Give_Mega_Stone_Swampert
+		msgbox LittlerootTown_ProfessorBirch_EventScript_Power_Of_Mega_Stones, MSGBOX_DEFAULT
+		setflag FLAG_BIRCH_STONE_GET
+		end
+
+LittlerootTown_ProfessorBirch_EventScript_Give_Mega_Stone_Sceptile::
+	giveitem ITEM_SCEPTILITE, 1
+	return
+
+LittlerootTown_ProfessorBirch_EventScript_Give_Mega_Stone_Blaziken::
+	giveitem ITEM_BLAZIKENITE, 1
+	return
+
+LittlerootTown_ProfessorBirch_EventScript_Give_Mega_Stone_Swampert::
+	giveitem ITEM_SWAMPERTITE, 1
+	return
+
+LittlerootTown_ProfessorBirch_EventScript_Five_Badges:
 	.string "Oh, you've beaten your\n"
 	.string "father and gotten a mega ring?\n"
-	.string "I have a gift for you to celebrate!\n"
+	.string "I have a gift for you to celebrate!$"
 
-LittlerootTown_ProfessorBirchsLab_EventScript_Power_Of_Mega_Stones:
+LittlerootTown_ProfessorBirch_EventScript_Power_Of_Mega_Stones:
 	.string "If you give your\n"
 	.string "starter this stone,\n"
 	.string "it will unlock a great power\n"
