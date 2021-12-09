@@ -84,7 +84,7 @@ LilycoveCity_DepartmentStore_2F_Pokemart2:
 	.2byte ITEM_PROTECTOR
 	.2byte ITEM_REAPER_CLOTH
 	.2byte ITEM_SACHET
-	.2byte ITEM_UPGRADE
+	.2byte ITEM_UP_GRADE
 	.2byte ITEM_WHIPPED_DREAM
 	.2byte ITEM_ASSAULT_VEST
 	.2byte ITEM_CHOICE_BAND

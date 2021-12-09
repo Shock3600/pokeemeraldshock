@@ -423,7 +423,6 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	setflag FLAG_DEFEATED_PETALBURG_GYM
 	setvar VAR_PETALBURG_GYM_STATE, 7
 	setflag FLAG_BADGE05_GET
-	setvar VAR_BIRCH_LAB_STATE, 1
 	special ResetHealLocationFromDewford
 	call EventScript_HideMrBriney
 	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
@@ -1412,7 +1411,7 @@ PetalburgCity_Gym_Text_Explain_Mega_Ring:
 	.string "POKEMON if they are holding\n"
 	.string "the right MEGA STONE.\p"
 	.string "Press START before\n"
-	.string "selecting a move.$:
+	.string "selecting a move.$:"
 
 PetalburgCity_Gym_Text_DadHappyAndSad:
 	.string "DAD: As the GYM LEADER, I can't\n"
@@ -1708,4 +1707,3 @@ PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
 	.string "capable of battle?\p"
 	.string "Sorry, but you'll have to come back\n"
 	.string "with at least two POKéMON.$"
-

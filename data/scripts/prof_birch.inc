@@ -48,12 +48,39 @@ ProfBirch_EventScript_RatePokedexOrRegister::
 	goto_if_unset FLAG_ENABLE_PROF_BIRCH_MATCH_CALL, EventScript_RegisterProfBirch
 
 ProfBirch_EventScript_AskRatePokedex::
+	goto_if_set FLAG_BADGE05_GET, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_1
 	msgbox gBirchDexRatingText_AreYouCurious, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq ProfBirch_EventScript_DeclineRating
 	call ProfBirch_EventScript_RatePokedex
 	release
 	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_1::
+	goto_if_unset FLAG_BIRCH_STONE_GET LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_2
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_2::
+		msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Five_Badges, MSGBOX_DEFAULT
+		switch VAR_STARTER_MON
+		case 0, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Sceptile
+		case 1, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Blaziken
+		case 2, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Swampert
+		msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Power_Of_Mega_Stones, MSGBOX_DEFAULT
+		setflag FLAG_BIRCH_STONE_GET
+		end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Sceptile::
+	giveitem ITEM_SCEPTILITE, 1
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Blaziken::
+	giveitem ITEM_BLAZIKENITE, 1
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Swampert::
+	giveitem ITEM_SWAMPERTITE, 1
+	return
 
 ProfBirch_EventScript_DeclineRating::
 	msgbox gBirchDexRatingText_Cancel, MSGBOX_DEFAULT
@@ -87,3 +114,17 @@ ProfBirch_EventScript_RatePokedex::
 	buffernumberstring 1, VAR_0x8009  @ Num National caught
 	msgbox gBirchDexRatingText_OnANationwideBasis, MSGBOX_DEFAULT
 	return
+	
+	
+LittlerootTown_ProfessorBirchsLab_EventScript_Five_Badges:
+	.string "Oh, you've beaten your\n"
+	.string "father and gotten a mega ring?\n"
+	.string "I have a gift for you to celebrate!\n"
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Power_Of_Mega_Stones:
+	.string "If you give your\n"
+	.string "starter this stone,\n"
+	.string "it will unlock a great power\n"
+	.string "in battle when you\n"
+	.string "press start before\n"
+	.string "selecting a move.$" 
