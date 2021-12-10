@@ -92,6 +92,7 @@ LavaridgeTown_Gym_1F_EventScript_GiveOverheat2::
 	msgbox LavaridgeTown_Gym_1F_Text_ExplainOverheat, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM50
 	giveitem ITEM_FLAME_ORB
+	giveitem ITEM_ABILITY_CAPSULE
 	release
 	end
 

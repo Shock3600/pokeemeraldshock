@@ -185,8 +185,9 @@ DewfordTown_Gym_EventScript_GiveBulkUp::
 	compare VAR_RESULT, 0
 	goto_if_eq Common_EventScript_BagIsFull
 	msgbox DewfordTown_Gym_Text_ExplainBulkUp, MSGBOX_DEFAULT
-	giveitem ITEM_EXPERT_BELT
 	setflag FLAG_RECEIVED_TM08
+	giveitem ITEM_EXPERT_BELT
+	giveitem ITEM_ABILITY_CAPSULE
 	return
 
 DewfordTown_Gym_EventScript_GiveBulkUp2:

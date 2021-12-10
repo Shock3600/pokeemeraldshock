@@ -80,6 +80,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 1
 	call MossdeepCity_Gym_EventScript_GiveCalmMind
 	giveitem ITEM_CHOICE_SPECS
+	giveitem ITEM_ABILITY_CAPSULE
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
