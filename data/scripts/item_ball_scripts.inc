@@ -119,7 +119,7 @@ Route115_EventScript_ItemGreatBall::
 	end
 
 Route115_EventScript_ItemHealPowder::
-	finditem ITEM_HEAL_POWDER
+	finditem ITEM_SHINY_STONE
 	end
 
 Route115_EventScript_ItemPPUp::
@@ -307,7 +307,7 @@ PetalburgCity_EventScript_ItemMaxRevive::
 	end
 
 PetalburgCity_EventScript_ItemEther::
-	finditem ITEM_ETHER
+	finditem ITEM_DAWN_STONE
 	end
 
 MauvilleCity_EventScript_ItemXSpeed::
@@ -419,7 +419,7 @@ NewMauville_Inside_EventScript_ItemParalyzeHeal::
 	end
 
 AbandonedShip_Rooms_1F_EventScript_ItemHarborMail::
-	finditem ITEM_HARBOR_MAIL
+	finditem ITEM_PRISM_SCALE
 	end
 
 AbandonedShip_Rooms_B1F_EventScript_ItemEscapeRope::
@@ -427,7 +427,7 @@ AbandonedShip_Rooms_B1F_EventScript_ItemEscapeRope::
 	end
 
 AbandonedShip_Rooms2_B1F_EventScript_ItemDiveBall::
-	finditem ITEM_DIVE_BALL
+	finditem ITEM_REAPER_CLOTH
 	end
 
 AbandonedShip_Room_B1F_EventScript_ItemTM13::
@@ -479,7 +479,7 @@ SafariZone_Northeast_EventScript_ItemNugget::
 	end
 
 SafariZone_Southeast_EventScript_ItemBigPearl::
-	finditem ITEM_BIG_PEARL
+	finditem ITEM_PROTECTOR
 	end
 
 MtPyre_2F_EventScript_ItemUltraBall::
@@ -656,4 +656,8 @@ MagmaHideout_4F_EventScript_ItemMaxRevive::
 
 MagmaHideout_3F_3R_EventScript_ItemEscapeRope::
 	finditem ITEM_ESCAPE_ROPE
+	end
+
+SkyPillar_Entrance_EventScript_Item_Dragon_Scale::
+	finditem ITEM_DRAGON_SCALE
 	end
