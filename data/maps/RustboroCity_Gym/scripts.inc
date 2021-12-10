@@ -33,6 +33,7 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM39
 	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
+	giveitem ITEM_ROCKY_HELMET
 	release
 	end
 

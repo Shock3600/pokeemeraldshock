@@ -35,6 +35,7 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	setvar VAR_0x8008, 6
 	call Common_EventScript_SetGymTrainers
 	call FortreeCity_Gym_EventScript_GiveAerialAce
+	giveitem ITEM_CHOICE_SCARF
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL

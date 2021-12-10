@@ -428,6 +428,7 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	special DrawWholeMapView
 	call PetalburgCity_Gym_EventScript_GiveFacade
 	call PetalburgCity_Gym_EventScript_GiveMegaBracelet
+	giveitem ITEM_CHOICE_BAND
 	delay 30
 	msgbox PetalburgCity_Gym_Text_DadHappyAndSad, MSGBOX_DEFAULT
 	closemessage

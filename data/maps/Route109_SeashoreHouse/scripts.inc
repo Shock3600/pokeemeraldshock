@@ -25,6 +25,7 @@ Route109_SeashoreHouse_EventScript_AlreadyGaveIntroduction::
 Route109_SeashoreHouse_EventScript_DefeatedTrainers::
 	msgbox Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles, MSGBOX_DEFAULT
 	giveitem ITEM_SODA_POP, 6
+	giveitem ITEM_LEFTOVERS
 	compare VAR_RESULT, FALSE
 	goto_if_eq Route109_SeashoreHouse_EventScript_BagFull
 	setflag FLAG_RECEIVED_6_SODA_POP

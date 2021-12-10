@@ -338,6 +338,7 @@ LilycoveCity_EventScript_DefeatedMay::
 	call_if_eq LilycoveCity_EventScript_MayPokemonLeague
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_PICHU_DOLL
+	giveitem ITEM_EVIOLITE
 	goto LilycoveCity_EventScript_RivalFlyAway
 	end
 
@@ -372,6 +373,7 @@ LilycoveCity_EventScript_DefeatedBrendan::
 	call_if_eq LilycoveCity_EventScript_BrendanPokemonLeague
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_SWABLU_DOLL
+	giveitem ITEM_EVIOLITE
 	goto LilycoveCity_EventScript_RivalFlyAway
 	end
 

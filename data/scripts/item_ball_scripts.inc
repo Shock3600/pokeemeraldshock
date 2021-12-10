@@ -327,7 +327,7 @@ MossdeepCity_EventScript_ItemNetBall::
 	end
 
 PetalburgWoods_EventScript_ItemXAttack::
-	finditem ITEM_X_ATTACK
+	finditem ITEM_TOXIC_ORB
 	end
 
 PetalburgWoods_EventScript_ItemGreatBall::

@@ -14,9 +14,6 @@ FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner::
 	end
 
 FallarborTown_MoveRelearnersHouse_EventScript_AskTeachMove::
-	checkitem ITEM_HEART_SCALE, 1
-	compare VAR_RESULT, FALSE
-	goto_if_eq FallarborTown_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale
 	msgbox FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove, MSGBOX_YESNO
 	switch VAR_RESULT
 	case NO, FallarborTown_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale
@@ -44,7 +41,6 @@ FallarborTown_MoveRelearnersHouse_EventScript_ChooseMove::
 	compare VAR_0x8004, 0
 	goto_if_eq FallarborTown_MoveRelearnersHouse_EventScript_ChooseMon
 	msgbox FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale, MSGBOX_DEFAULT
-	removeitem ITEM_HEART_SCALE
 	goto FallarborTown_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale
 	end
 
