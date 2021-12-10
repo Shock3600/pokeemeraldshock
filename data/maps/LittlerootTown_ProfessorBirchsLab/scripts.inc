@@ -501,7 +501,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedJohtoStarter::
 LittlerootTown_ProfessorBirchsLab_EventScript_Birch::
 	lock
 	faceplayer
-	goto_if_set FLAG_BADGE05_GET, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone0
+	call_if_set FLAG_BADGE05_GET, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone0
 	compare VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 5
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_CanHaveAnyOneOfRarePokemon
 	compare VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2
@@ -716,30 +716,45 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall::
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone0::
-	goto_if_unset FLAG_BIRCH_STONE_GET, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone
+	call_if_unset FLAG_BIRCH_STONE_GET, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone
 	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone::
 		msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Five_Badges, MSGBOX_DEFAULT
+		waitmessage
+		closemessage
 		switch VAR_STARTER_MON
 		case 0, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Sceptile
 		case 1, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Blaziken
 		case 2, LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Swampert
-		msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Power_Of_Mega_Stones, MSGBOX_DEFAULT
-		setflag FLAG_BIRCH_STONE_GET
 		end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Sceptile::
 	giveitem ITEM_SCEPTILITE, 1
-	return
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Power_Of_Mega_Stones, MSGBOX_DEFAULT
+	waitmessage
+	closemessage
+	setflag FLAG_BIRCH_STONE_GET
+	release
+	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Blaziken::
 	giveitem ITEM_BLAZIKENITE, 1
-	return
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Power_Of_Mega_Stones, MSGBOX_DEFAULT
+	waitmessage
+	closemessage
+	setflag FLAG_BIRCH_STONE_GET
+	release
+	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Give_Mega_Stone_Swampert::
 	giveitem ITEM_SWAMPERTITE, 1
-	return
+	msgbox LittlerootTown_ProfessorBirchsLab_EventScript_Power_Of_Mega_Stones, MSGBOX_DEFAULT
+	waitmessage
+	closemessage
+	setflag FLAG_BIRCH_STONE_GET
+	release
+	end
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
 	.string "Hunh? PROF. BIRCH?\p"
@@ -1080,13 +1095,13 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Five_Badges:
 	.string "Oh, you've beaten your\n"
-	.string "father and gotten a mega ring?\n"
+	.string "father and gotten a mega ring?\p"
 	.string "I have a gift for you to celebrate!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Power_Of_Mega_Stones:
 	.string "If you give your\n"
-	.string "starter this stone,\n"
+	.string "starter this stone,\p"
 	.string "it will unlock a great power\n"
-	.string "in battle when you\n"
+	.string "in battle when you\p"
 	.string "press start before\n"
 	.string "selecting a move.$" 
