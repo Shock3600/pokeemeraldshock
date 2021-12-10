@@ -3908,7 +3908,7 @@ static void Cmd_getexp(void)
                     }
                     #endif
 
-                    if (IsTradedMon(&gPlayerParty[gBattleStruct->expGetterMonId]))
+                    /*if (IsTradedMon(&gPlayerParty[gBattleStruct->expGetterMonId]))
                     {
                         // check if the pokemon doesn't belong to the player
                         if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && gBattleStruct->expGetterMonId >= 3)
@@ -3920,8 +3920,8 @@ static void Cmd_getexp(void)
                             gBattleMoveDamage = (gBattleMoveDamage * 150) / 100;
                             i = STRINGID_ABOOSTED;
                         }
-                    }
-                    else
+                    }*/
+                    
                     {
                         i = STRINGID_EMPTYSTRING4;
                     }
