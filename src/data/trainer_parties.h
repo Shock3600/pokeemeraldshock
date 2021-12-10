@@ -3455,7 +3455,7 @@ static const struct TrainerMon sParty_Wattson1[] = {
     {
     .build = TRAINER_MON_SPEED_SPEC,
 	.difficulty = TRAINER_HARD,
-	.hiddenPower - TYPE_ICE,
+	.hiddenPower = TYPE_ICE,
     .lvl = 26,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_MANECTRIC,
