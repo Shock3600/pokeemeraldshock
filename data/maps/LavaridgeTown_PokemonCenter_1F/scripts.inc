@@ -30,6 +30,24 @@ LavaridgeTown_PokemonCenter_1F_EventScript_Gentleman::
 	msgbox LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo, MSGBOX_NPC
 	end
 
+LavaridgeCity_PokemonCenter_1F_EventScript_Expert::
+	trainerbattle_single TRAINER_EXPERT_4, LavaridgeCity_PokemonCenter_1F_Text_ExpertIntro, LavaridgeCity_PokemonCenter_1F_Text_ExpertDefeat
+	msgbox LavaridgeCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
+	clearflag TRAINER_EXPERT_4
+	end
+
+LavaridgeCity_PokemonCenter_1F_Text_ExpertIntro:
+	.string "The journey ahead\n"
+	.string "much training.\p"
+	.string "Are you ready?$"
+	
+LavaridgeCity_PokemonCenter_1F_Text_ExpertDefeat:
+	.string "You aren't ready.$"
+	
+LavaridgeCity_PokemonCenter_F_Text_ExpertPostBattle:
+	.string "Maybe you are\n"
+	.string "ready...$"
+
 LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether:
 	.string "I think POKéMON get closer to their\n"
 	.string "TRAINERS if they spend time together.\p"

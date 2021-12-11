@@ -11113,4 +11113,108 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_MayLinkPlaceholder),
         .party = {.TrainerMon = sParty_MayLinkPlaceholder},
     },
+
+    [TRAINER_EXPERT_1] =
+    {
+        .trainerClass = TRAINER_CLASS_EXPERT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerName = _("TRAINER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = ARRAY_COUNT(sParty_Expert1),
+        .party = {.TrainerMon = sParty_Expert1},
+    },
+
+    [TRAINER_EXPERT_2] =
+    {
+        .trainerClass = TRAINER_CLASS_EXPERT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerName = _("TRAINER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = ARRAY_COUNT(sParty_Expert2),
+        .party = {.TrainerMon = sParty_Expert2},
+    },
+
+    [TRAINER_EXPERT_3] =
+    {
+        .trainerClass = TRAINER_CLASS_EXPERT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerName = _("TRAINER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = ARRAY_COUNT(sParty_Expert3),
+        .party = {.TrainerMon = sParty_Expert3},
+    },
+
+    [TRAINER_EXPERT_4] =
+    {
+        .trainerClass = TRAINER_CLASS_EXPERT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerName = _("TRAINER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = ARRAY_COUNT(sParty_Expert4),
+        .party = {.TrainerMon = sParty_Expert4},
+    },
+
+    [TRAINER_EXPERT_5] =
+    {
+        .trainerClass = TRAINER_CLASS_EXPERT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerName = _("TRAINER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = ARRAY_COUNT(sParty_Expert5),
+        .party = {.TrainerMon = sParty_Expert5},
+    },
+
+    [TRAINER_EXPERT_6] =
+    {
+        .trainerClass = TRAINER_CLASS_EXPERT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerName = _("TRAINER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = ARRAY_COUNT(sParty_Expert6),
+        .party = {.TrainerMon = sParty_Expert6},
+    },
+
+    [TRAINER_EXPERT_7] =
+    {
+        .trainerClass = TRAINER_CLASS_EXPERT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerName = _("TRAINER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = ARRAY_COUNT(sParty_Expert7),
+        .party = {.TrainerMon = sParty_Expert7},
+    },
+
+    [TRAINER_EXPERT_8] =
+    {
+        .trainerClass = TRAINER_CLASS_EXPERT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerName = _("TRAINER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = 0,
+        .partySize = ARRAY_COUNT(sParty_Expert8),
+        .party = {.TrainerMon = sParty_Expert8},
+    },
 };

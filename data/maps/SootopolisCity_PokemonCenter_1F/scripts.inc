@@ -47,6 +47,24 @@ SootopolisCity_PokemonCenter_1F_EventScript_WomanNoLegendaries::
 	release
 	end
 
+SootpolisCity_PokemonCenter_1F_EventScript_Expert::
+	trainerbattle_single TRAINER_EXPERT_8, SootpolisCity_PokemonCenter_1F_Text_ExpertIntro, SootpolisCity_PokemonCenter_1F_Text_ExpertDefeat
+	msgbox SootpolisCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
+	clearflag TRAINER_EXPERT_8
+	end
+
+SootpolisCity_PokemonCenter_1F_Text_ExpertIntro:
+	.string "The journey ahead\n"
+	.string "much training.\p"
+	.string "Are you ready?$"
+	
+SootpolisCity_PokemonCenter_1F_Text_ExpertDefeat:
+	.string "You aren't ready.$"
+	
+SootpolisCity_PokemonCenter_F_Text_ExpertPostBattle:
+	.string "Maybe you are\n"
+	.string "ready...$"
+
 SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn:
 	.string "WALLACE is rumored to be the toughest\n"
 	.string "TRAINER in the whole HOENN region.\p"

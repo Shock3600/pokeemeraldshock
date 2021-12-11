@@ -29,6 +29,24 @@ FortreeCity_PokemonCenter_1F_EventScript_Boy::
 	msgbox FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav, MSGBOX_NPC
 	end
 
+FortreeCity_PokemonCenter_1F_EventScript_Expert::
+	trainerbattle_single TRAINER_EXPERT_6, FortreeCity_PokemonCenter_1F_Text_ExpertIntro, FortreeCity_PokemonCenter_1F_Text_ExpertDefeat
+	msgbox FortreeCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
+	clearflag TRAINER_EXPERT_6
+	end
+
+FortreeCity_PokemonCenter_1F_Text_ExpertIntro:
+	.string "The journey ahead\n"
+	.string "much training.\p"
+	.string "Are you ready?$"
+	
+FortreeCity_PokemonCenter_1F_Text_ExpertDefeat:
+	.string "You aren't ready.$"
+	
+FortreeCity_PokemonCenter_F_Text_ExpertPostBattle:
+	.string "Maybe you are\n"
+	.string "ready...$"
+
 FortreeCity_PokemonCenter_1F_Text_GoToSafariZone:
 	.string "Listen, kid, are you working\n"
 	.string "on a POKéDEX?\p"

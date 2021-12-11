@@ -26,6 +26,24 @@ DewfordTown_PokemonCenter_1F_EventScript_Man::
 	msgbox DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM, MSGBOX_NPC
 	end
 
+DewfordCity_PokemonCenter_1F_EventScript_Expert::
+	trainerbattle_single TRAINER_EXPERT_2, DewfordCity_PokemonCenter_1F_Text_ExpertIntro, DewfordCity_PokemonCenter_1F_Text_ExpertDefeat
+	msgbox DewfordCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
+	clearflag TRAINER_EXPERT_2
+	end
+
+DewfordCity_PokemonCenter_1F_Text_ExpertIntro:
+	.string "The journey ahead\n"
+	.string "much training.\p"
+	.string "Are you ready?$"
+	
+DewfordCity_PokemonCenter_1F_Text_ExpertDefeat:
+	.string "You aren't ready.$"
+	
+DewfordCity_PokemonCenter_F_Text_ExpertPostBattle:
+	.string "Maybe you are\n"
+	.string "ready...$"
+
 DewfordTown_PokemonCenter_1F_Text_StoneCavern:
 	.string "There's a stone cavern at the edge\n"
 	.string "of town.\p"

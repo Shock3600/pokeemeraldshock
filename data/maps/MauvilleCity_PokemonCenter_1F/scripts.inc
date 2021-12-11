@@ -35,6 +35,24 @@ MauvilleCity_PokemonCenter_1F_EventScript_Youngster::
 	msgbox MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun, MSGBOX_NPC
 	end
 
+MauvilleCity_PokemonCenter_1F_EventScript_Expert::
+	trainerbattle_single TRAINER_EXPERT_3, MauvilleCity_PokemonCenter_1F_Text_ExpertIntro, MauvilleCity_PokemonCenter_1F_Text_ExpertDefeat
+	msgbox MauvilleCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
+	clearflag TRAINER_EXPERT_3
+	end
+
+MauvilleCity_PokemonCenter_1F_Text_ExpertIntro:
+	.string "The journey ahead\n"
+	.string "much training.\p"
+	.string "Are you ready?$"
+	
+MauvilleCity_PokemonCenter_1F_Text_ExpertDefeat:
+	.string "You aren't ready.$"
+	
+MauvilleCity_PokemonCenter_F_Text_ExpertPostBattle:
+	.string "Maybe you are\n"
+	.string "ready...$"
+
 MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings:
 	.string "That man over there, he says weird\n"
 	.string "things!\p"

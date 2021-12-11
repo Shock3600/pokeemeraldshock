@@ -58,6 +58,24 @@ PetalburgCity_PokemonCenter_1F_EventScript_SayMudkipType::
 	msgbox PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType, MSGBOX_DEFAULT
 	return
 
+PetalburgCity_PokemonCenter_1F_EventScript_Expert::
+	trainerbattle_single TRAINER_EXPERT_5, PetalburgCity_PokemonCenter_1F_Text_ExpertIntro, PetalburgCity_PokemonCenter_1F_Text_ExpertDefeat
+	clearflag TRAINER_EXPERT_5
+	msgbox PetalburgCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+PetalburgCity_PokemonCenter_1F_Text_ExpertIntro:
+	.string "The journey ahead\n"
+	.string "much training.\p"
+	.string "Are you ready?$"
+	
+PetalburgCity_PokemonCenter_1F_Text_ExpertDefeat:
+	.string "You aren't ready.$"
+	
+PetalburgCity_PokemonCenter_F_Text_ExpertPostBattle:
+	.string "Maybe you are\n"
+	.string "ready...$"
+
 PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem:
 	.string "That PC-based POKéMON Storage\n"
 	.string "System…\p"

@@ -12482,3 +12482,270 @@ static const struct TrainerMon sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+
+static const struct TrainerMon sParty_Expert1[] = {
+    {
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_DRATINI,
+    },
+	{
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_LARVITAR,
+    },
+	{
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_BELDUM,
+    },
+	{
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_GIBLE,
+    },
+	{
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_GOOMY,
+    },
+	{
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_DREEPY,
+    }
+};
+
+static const struct TrainerMon sParty_Expert2[] = {
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_BAGON,
+    },
+	{
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_LARVITAR,
+    },
+	{
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_BELDUM,
+    },
+	{
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_DEINO,
+    },
+	{
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_JANGMO_O,
+    },
+	{
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_DREEPY,
+    }
+};
+
+
+static const struct TrainerMon sParty_Expert3[] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_BAGON,
+    },
+	{
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_LARVITAR,
+    },
+	{
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_METANG,
+    },
+	{
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_DEINO,
+    },
+	{
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_JANGMO_O,
+    },
+	{
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_DREEPY,
+    }
+};
+
+static const struct TrainerMon sParty_Expert4[] = {
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_DRATINI,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_PUPITAR,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_METANG,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_GABITE,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_GOOMY,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_DREEPY,
+    }
+};
+
+
+static const struct TrainerMon sParty_Expert5[] = {
+    {
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_SHELGON,
+    },
+	{
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_PUPITAR,
+    },
+	{
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_METANG,
+    },
+	{
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_DEINO,
+    },
+	{
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_JANGMO_O,
+    },
+	{
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_DREEPY,
+    }
+};
+
+static const struct TrainerMon sParty_Expert6[] = {
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_DRATINI,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_PUPITAR,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_METANG,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_GABITE,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_GOOMY,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_DREEPY,
+    }
+};
+
+static const struct TrainerMon sParty_Expert7[] = {
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_DRATINI,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_PUPITAR,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_METANG,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_GABITE,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_GOOMY,
+    },
+	{
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_DREEPY,
+    }
+};
+
+
+static const struct TrainerMon sParty_Expert8[] = {
+    {
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_SHELGON,
+    },
+	{
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_PUPITAR,
+    },
+	{
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_METANG,
+    },
+	{
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_DEINO,
+    },
+	{
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_JANGMO_O,
+    },
+	{
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_DREEPY,
+    }
+};

@@ -25,6 +25,24 @@ MossdeepCity_PokemonCenter_1F_EventScript_Girl::
 	msgbox MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves, MSGBOX_NPC
 	end
 
+MossdeepCity_PokemonCenter_1F_EventScript_Expert::
+	trainerbattle_single TRAINER_EXPERT_7, MossdeepCity_PokemonCenter_1F_Text_ExpertIntro, MossdeepCity_PokemonCenter_1F_Text_ExpertDefeat
+	msgbox MossdeepCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
+	clearflag TRAINER_EXPERT_7
+	end
+
+MossdeepCity_PokemonCenter_1F_Text_ExpertIntro:
+	.string "The journey ahead\n"
+	.string "much training.\p"
+	.string "Are you ready?$"
+	
+MossdeepCity_PokemonCenter_1F_Text_ExpertDefeat:
+	.string "You aren't ready.$"
+	
+MossdeepCity_PokemonCenter_F_Text_ExpertPostBattle:
+	.string "Maybe you are\n"
+	.string "ready...$"
+
 MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable:
 	.string "The GYM LEADERS in this town are\n"
 	.string "a formidable duo.\p"

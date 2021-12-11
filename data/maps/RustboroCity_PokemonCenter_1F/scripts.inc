@@ -30,6 +30,24 @@ RustboroCity_PokemonCenter_1F_EventScript_Girl::
 	msgbox RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor, MSGBOX_NPC
 	end
 
+RustboroCity_PokemonCenter_1F_EventScript_Expert::
+	trainerbattle_single TRAINER_EXPERT_1, RustboroCity_PokemonCenter_1F_Text_ExpertIntro, RustboroCity_PokemonCenter_1F_Text_ExpertDefeat
+	msgbox RustboroCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
+	clearflag TRAINER_EXPERT_1
+	end
+
+RustboroCity_PokemonCenter_1F_Text_ExpertIntro:
+	.string "The journey ahead\n"
+	.string "much training.\p"
+	.string "Are you ready?$"
+	
+RustboroCity_PokemonCenter_1F_Text_ExpertDefeat:
+	.string "You aren't ready.$"
+	
+RustboroCity_PokemonCenter_F_Text_ExpertPostBattle:
+	.string "Maybe you are\n"
+	.string "ready...$"
+
 RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities:
 	.string "My POKéMON has a NAIVE nature, and my\n"
 	.string "friend's has a JOLLY nature.\p"
@@ -46,4 +64,3 @@ RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
 	.string "The man next door gave me an HM!\p"
 	.string "I used it to teach my POKéMON how to\n"
 	.string "CUT down skinny trees.$"
-
