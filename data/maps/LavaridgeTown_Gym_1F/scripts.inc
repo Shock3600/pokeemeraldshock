@@ -91,8 +91,6 @@ LavaridgeTown_Gym_1F_EventScript_GiveOverheat2::
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	msgbox LavaridgeTown_Gym_1F_Text_ExplainOverheat, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM50
-	giveitem ITEM_FLAME_ORB
-	giveitem ITEM_ABILITY_CAPSULE
 	release
 	end
 
@@ -101,6 +99,8 @@ LavaridgeTown_Gym_1F_EventScript_GiveOverheat::
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_BagIsFull
 	msgbox LavaridgeTown_Gym_1F_Text_ExplainOverheat, MSGBOX_DEFAULT
+	giveitem ITEM_FLAME_ORB
+	giveitem ITEM_ABILITY_CAPSULE
 	setflag FLAG_RECEIVED_TM50
 	return
 

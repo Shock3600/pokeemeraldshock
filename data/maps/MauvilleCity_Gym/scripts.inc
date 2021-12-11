@@ -131,6 +131,8 @@ MauvilleCity_Gym_EventScript_GiveShockWave::
 	goto_if_eq Common_EventScript_BagIsFull
 	msgbox MauvilleCity_Gym_Text_ExplainShockWave, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM34
+	giveitem ITEM_LIFE_ORB
+	giveitem ITEM_ABILITY_CAPSULE
 	return
 
 MauvilleCity_Gym_EventScript_CompletedNewMauville::
