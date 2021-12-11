@@ -3553,108 +3553,163 @@ static const struct TrainerMon sParty_Norman1[] = {
 
 static const struct TrainerMon sParty_Winona1[] = {
     {
-    .iv = 210,
-    .lvl = 29,
-    .species = SPECIES_SWABLU,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PERISH_SONG, MOVE_MIRROR_MOVE, MOVE_SAFEGUARD, MOVE_AERIAL_ACE}
-    },
-    {
-    .iv = 210,
-    .lvl = 29,
-    .species = SPECIES_TROPIUS,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_SYNTHESIS}
-    },
-    {
-    .iv = 210,
-    .lvl = 30,
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_HARD,
+    .lvl = 37,
+	.ability = ABILITY_SLOT_1,
     .species = SPECIES_PELIPPER,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_GUN, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE}
+    .heldItem = ITEM_DAMP_ROCK,
+    .moves = {MOVE_ROOST, MOVE_SCALD, MOVE_HURRICANE, MOVE_U_TURN}
     },
     {
-    .iv = 220,
-    .lvl = 31,
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_HARD,
+    .lvl = 37,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_TROPIUS,
+    .heldItem = ITEM_YACHE_BERRY,
+    .moves = {MOVE_ROOST, MOVE_PROTECT, MOVE_LEECH_SEED, MOVE_GIGA_DRAIN}
+    },
+    {
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_HARD,
+    .lvl = 39,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_GYARADOS,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_DRAGON_DANCE, MOVE_WATERFALL, MOVE_EARTHQUAKE, MOVE_STONE_EDGE}
+    },
+    {
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_HARD,
+    .lvl = 39,
+	.ability = ABILITY_SLOT_2,
     .species = SPECIES_SKARMORY,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_SAND_ATTACK, MOVE_FURY_ATTACK, MOVE_STEEL_WING, MOVE_AERIAL_ACE}
+    .moves = {MOVE_ROOST, MOVE_SPIKES, MOVE_BODY_PRESS, MOVE_WHIRLWIND}
     },
     {
-    .iv = 255,
-    .lvl = 33,
+    .build = TRAINER_MON_PHYS,
+	.difficulty = TRAINER_HARDER,
+    .lvl = 41,
+	.ability = ABILITY_SLOT_1,
     .species = SPECIES_ALTARIA,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_EARTHQUAKE, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE}
+    .heldItem = ITEM_ALTARIANITE,
+    .moves = {MOVE_DRAGON_DANCE, MOVE_RETURN, MOVE_EARTHQUAKE, MOVE_ROOST}
     }
 };
 
 static const struct TrainerMon sParty_TateAndLiza1[] = {
     {
-    .iv = 250,
-    .lvl = 41,
+    .build = TRAINER_MON_SPEED_SPEC,
+	.difficulty = TRAINER_HARD,
+    .lvl = 42,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_STARMIE,
+    .heldItem = ITEM_POWER_HERB,
+    .moves = {MOVE_HYDRO_PUMP, MOVE_PSYCHIC, MOVE_METEOR_BEAM, MOVE_DAZZLING_GLEAM}
+    },
+    {
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_HARD,
+    .lvl = 42,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_GIRAFARIG,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_ALLY_SWITCH, MOVE_PSYCHIC_TERRAIN, MOVE_WISH, MOVE_HYPER_VOICE}
+    },
+    {
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_HARD,
+    .lvl = 44,
+	.ability = ABILITY_SLOT_1,
     .species = SPECIES_CLAYDOL,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_EARTHQUAKE, MOVE_ANCIENT_POWER, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN}
+    .moves = {MOVE_ALLY_SWITCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_EARTH_POWER}
     },
     {
-    .iv = 250,
-    .lvl = 41,
-    .species = SPECIES_XATU,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PSYCHIC, MOVE_SUNNY_DAY, MOVE_CONFUSE_RAY, MOVE_CALM_MIND}
+    .build = TRAINER_MON_SPEED_SPEC,
+	.difficulty = TRAINER_HARD,
+    .lvl = 44,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_ALAKAZAM,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_PSYCHIC, MOVE_FOCUS_BLAST, MOVE_SHADOW_BALL, MOVE_PROTECT}
     },
     {
-    .iv = 250,
-    .lvl = 42,
-    .species = SPECIES_LUNATONE,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_HYPNOSIS, MOVE_CALM_MIND}
+    .build = TRAINER_MON_SPEC,
+	.difficulty = TRAINER_HARDEST,
+    .lvl = 46,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_GARDEVOIR,
+    .heldItem = ITEM_CHOICE_SCARF,
+    .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_FOCUS_BLAST, MOVE_MYSTICAL_FIRE}
     },
     {
-    .iv = 250,
-    .lvl = 42,
-    .species = SPECIES_SOLROCK,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER}
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_HARDEST,
+    .lvl = 46,
+	.ability = ABILITY_SLOT_1,
+    .species = SPECIES_GALLADE,
+    .heldItem = ITEM_GALLADITE,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_ZEN_HEADBUTT, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE}
     }
 };
 
 static const struct TrainerMon sParty_Juan1[] = {
     {
-    .iv = 200,
-    .lvl = 41,
-    .species = SPECIES_LUVDISC,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_PULSE, MOVE_ATTRACT, MOVE_SWEET_KISS, MOVE_FLAIL}
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_HARDER,
+    .lvl = 47,
+	.ability = ABILITY_SLOT_1,
+    .species = SPECIES_PELIPPER,
+    .heldItem = ITEM_DAMP_ROCK,
+    .moves = {MOVE_SCALD, MOVE_HURRICANE, MOVE_ROOST, MOVE_U_TURN}
     },
     {
-    .iv = 200,
-    .lvl = 41,
-    .species = SPECIES_WHISCASH,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_AMNESIA, MOVE_EARTHQUAKE}
-    },
-    {
-    .iv = 200,
-    .lvl = 43,
-    .species = SPECIES_SEALEO,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_ENCORE, MOVE_BODY_SLAM, MOVE_AURORA_BEAM, MOVE_WATER_PULSE}
-    },
-    {
-    .iv = 200,
-    .lvl = 43,
+    .build = TRAINER_MON_PHYS,
+	.difficulty = TRAINER_HARDER,
+    .lvl = 47,
+	.ability = ABILITY_HIDDEN,
     .species = SPECIES_CRAWDAUNT,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_PULSE, MOVE_CRABHAMMER, MOVE_TAUNT, MOVE_LEER}
+    .moves = {MOVE_AQUA_JET, MOVE_CRABHAMMER, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE}
     },
     {
-    .iv = 250,
-    .lvl = 46,
-    .species = SPECIES_KINGDRA,
-    .heldItem = ITEM_CHESTO_BERRY,
-    .moves = {MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST}
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_HARDER,
+    .lvl = 47,
+	.ability = ABILITY_SLOT_2,
+    .species = SPECIES_LANTURN,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_VOLT_SWITCH, MOVE_ICE_BEAM, MOVE_SCALD, MOVE_RAIN_DANCE}
+    },
+    {
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_HARDER,
+    .lvl = 49,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_AZUMARILL,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_WATERFALL, MOVE_PLAY_ROUGH, MOVE_AQUA_JET, MOVE_ICE_PUNCH}
+    },
+    {
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_HARDEST,
+    .lvl = 49,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_SWAMPERT,
+    .heldItem = ITEM_RINDO_BERRY,
+    .moves = {MOVE_EARTHQUAKE, MOVE_HYDRO_PUMP, MOVE_ICE_PUNCH, MOVE_FLIP_TURN}
+    },
+    {
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_HARDEST,
+    .lvl = 51,
+	.ability = ABILITY_SLOT_1,
+    .species = SPECIES_GYARADOS,
+    .heldItem = ITEM_GYARADOSITE,
+    .moves = {MOVE_DRAGON_DANCE, MOVE_WATERFALL, MOVE_CRUNCH, MOVE_EARTHQUAKE}
     }
 };
 
