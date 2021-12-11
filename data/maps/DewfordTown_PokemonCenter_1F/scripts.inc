@@ -29,7 +29,7 @@ DewfordTown_PokemonCenter_1F_EventScript_Man::
 DewfordCity_PokemonCenter_1F_EventScript_Expert::
 	trainerbattle_single TRAINER_EXPERT_2, DewfordCity_PokemonCenter_1F_Text_ExpertIntro, DewfordCity_PokemonCenter_1F_Text_ExpertDefeat
 	msgbox DewfordCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
-	clearflag TRAINER_EXPERT_2
+	cleartrainerflag TRAINER_EXPERT_2
 	end
 
 DewfordCity_PokemonCenter_1F_Text_ExpertIntro:

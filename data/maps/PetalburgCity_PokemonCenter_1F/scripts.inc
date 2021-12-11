@@ -60,7 +60,7 @@ PetalburgCity_PokemonCenter_1F_EventScript_SayMudkipType::
 
 PetalburgCity_PokemonCenter_1F_EventScript_Expert::
 	trainerbattle_single TRAINER_EXPERT_5, PetalburgCity_PokemonCenter_1F_Text_ExpertIntro, PetalburgCity_PokemonCenter_1F_Text_ExpertDefeat
-	clearflag TRAINER_EXPERT_5
+	cleartrainerflag TRAINER_EXPERT_5
 	msgbox PetalburgCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
 	end
 

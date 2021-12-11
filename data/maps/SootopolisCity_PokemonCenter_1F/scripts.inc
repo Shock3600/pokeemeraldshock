@@ -50,7 +50,7 @@ SootopolisCity_PokemonCenter_1F_EventScript_WomanNoLegendaries::
 SootpolisCity_PokemonCenter_1F_EventScript_Expert::
 	trainerbattle_single TRAINER_EXPERT_8, SootpolisCity_PokemonCenter_1F_Text_ExpertIntro, SootpolisCity_PokemonCenter_1F_Text_ExpertDefeat
 	msgbox SootpolisCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
-	clearflag TRAINER_EXPERT_8
+	cleartrainerflag TRAINER_EXPERT_8
 	end
 
 SootpolisCity_PokemonCenter_1F_Text_ExpertIntro:

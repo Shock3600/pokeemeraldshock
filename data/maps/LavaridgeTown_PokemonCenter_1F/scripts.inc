@@ -33,7 +33,7 @@ LavaridgeTown_PokemonCenter_1F_EventScript_Gentleman::
 LavaridgeCity_PokemonCenter_1F_EventScript_Expert::
 	trainerbattle_single TRAINER_EXPERT_4, LavaridgeCity_PokemonCenter_1F_Text_ExpertIntro, LavaridgeCity_PokemonCenter_1F_Text_ExpertDefeat
 	msgbox LavaridgeCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
-	clearflag TRAINER_EXPERT_4
+	cleartrainerflag TRAINER_EXPERT_4
 	end
 
 LavaridgeCity_PokemonCenter_1F_Text_ExpertIntro:

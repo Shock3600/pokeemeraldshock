@@ -28,7 +28,7 @@ MossdeepCity_PokemonCenter_1F_EventScript_Girl::
 MossdeepCity_PokemonCenter_1F_EventScript_Expert::
 	trainerbattle_single TRAINER_EXPERT_7, MossdeepCity_PokemonCenter_1F_Text_ExpertIntro, MossdeepCity_PokemonCenter_1F_Text_ExpertDefeat
 	msgbox MossdeepCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
-	clearflag TRAINER_EXPERT_7
+	cleartrainerflag TRAINER_EXPERT_7
 	end
 
 MossdeepCity_PokemonCenter_1F_Text_ExpertIntro:

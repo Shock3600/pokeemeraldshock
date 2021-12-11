@@ -33,7 +33,7 @@ RustboroCity_PokemonCenter_1F_EventScript_Girl::
 RustboroCity_PokemonCenter_1F_EventScript_Expert::
 	trainerbattle_single TRAINER_EXPERT_1, RustboroCity_PokemonCenter_1F_Text_ExpertIntro, RustboroCity_PokemonCenter_1F_Text_ExpertDefeat
 	msgbox RustboroCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
-	clearflag TRAINER_EXPERT_1
+	cleartrainerflag TRAINER_EXPERT_1
 	end
 
 RustboroCity_PokemonCenter_1F_Text_ExpertIntro:

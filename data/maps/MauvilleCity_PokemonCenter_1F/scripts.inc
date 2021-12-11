@@ -38,7 +38,7 @@ MauvilleCity_PokemonCenter_1F_EventScript_Youngster::
 MauvilleCity_PokemonCenter_1F_EventScript_Expert::
 	trainerbattle_single TRAINER_EXPERT_3, MauvilleCity_PokemonCenter_1F_Text_ExpertIntro, MauvilleCity_PokemonCenter_1F_Text_ExpertDefeat
 	msgbox MauvilleCity_PokemonCenter_F_Text_ExpertPostBattle, MSGBOX_AUTOCLOSE
-	clearflag TRAINER_EXPERT_3
+	cleartrainerflag TRAINER_EXPERT_3
 	end
 
 MauvilleCity_PokemonCenter_1F_Text_ExpertIntro:
