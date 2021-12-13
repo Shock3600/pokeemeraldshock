@@ -525,7 +525,6 @@ static void CB2_HandleInput(void)
 
 	if ((gMain.newKeys & A_BUTTON) && sPrevMapSection != MAPSEC_NONE && sPrevMapSection != MAPSEC_ROUTE_126 && sPrevMapSection != MAPSEC_ROUTE_128 && sPrevMapSection != MAPSEC_ROUTE_129 && sPrevMapSection != MAPSEC_ROUTE_130 && sPrevMapSection != MAPSEC_ROUTE_131 && (GetMapsecType(sPrevMapSection) == MAPSECTYPE_CITY_CANFLY || GetMapsecType(sPrevMapSection) == MAPSECTYPE_BATTLE_FRONTIER))
 	{
-		PlaySE(SE_SELECT);
 
 		DrawDialogFrameWithCustomTileAndPalette(windid2, 0, 10, 15);
 		AddTextPrinterParameterized(windid2, 1, sText_LandHere, 0, 0, TEXT_SPEED_FF, NULL);
