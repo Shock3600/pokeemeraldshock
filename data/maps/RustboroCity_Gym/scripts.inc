@@ -39,6 +39,7 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 RustboroCity_Gym_EventScript_RoxanneRematch::
 	trainerbattle_SINGLE TRAINER_ROXANNE_2, RustboroCity_Gym_Text_RoxannePreRematch, RustboroCity_Gym_Text_RoxanneRematchDefeat
 	msgbox RustboroCity_Gym_Text_RoxannePostRematch, MSGBOX_AUTOCLOSE
+	giveitem ITEM_AERODACTYLITE
 	end
 
 RustboroCity_Gym_EventScript_Josh::
