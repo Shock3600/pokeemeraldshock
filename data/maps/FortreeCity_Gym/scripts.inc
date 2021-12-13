@@ -37,6 +37,7 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	call FortreeCity_Gym_EventScript_GiveAerialAce
 	giveitem ITEM_CHOICE_SCARF
 	giveitem ITEM_ABILITY_CAPSULE
+	giveitem ITEM_ALTARIANITE
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL

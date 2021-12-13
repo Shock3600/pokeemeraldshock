@@ -81,6 +81,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	call MossdeepCity_Gym_EventScript_GiveCalmMind
 	giveitem ITEM_CHOICE_SPECS
 	giveitem ITEM_ABILITY_CAPSULE
+	giveitem ITEM_GALLADITE
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL

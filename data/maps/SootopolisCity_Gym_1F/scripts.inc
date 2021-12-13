@@ -110,6 +110,7 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	call SootopolisCity_Gym_1F_EventScript_GiveWaterPulse
 	giveitem ITEM_ASSAULT_VEST
 	giveitem ITEM_ABILITY_CAPSULE
+	giveitem ITEM_GYARADOSITE
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
