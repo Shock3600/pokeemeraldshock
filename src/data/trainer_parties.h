@@ -10403,32 +10403,58 @@ static const struct TrainerMon sParty_MayRustboroTorchic[] = {
 
 static const struct TrainerMon sParty_Roxanne2[] = {
     {
-    .iv = 255,
-    .lvl = 32,
-    .species = SPECIES_GOLEM,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PROTECT, MOVE_ROLLOUT, MOVE_MAGNITUDE, MOVE_EXPLOSION}
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_HARDER,
+	.lvl = 57,
+	.ability = ABILITY_SLOT_2,
+    .species = SPECIES_GIGALITH,
+    .heldItem = ITEM_SMOOTH_ROCK,
+    .moves = {MOVE_STEALTH_ROCK, MOVE_EARTHQUAKE, MOVE_STONE_EDGE, MOVE_TOXIC}
     },
     {
-    .iv = 255,
-    .lvl = 35,
-    .species = SPECIES_KABUTO,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE}
+    .build = TRAINER_MON_PHYS,
+	.difficulty = TRAINER_HARDER,
+    .lvl = 57,
+	.ability = ABILITY_SLOT_1,
+    .species = SPECIES_TYRANITAR,
+    .heldItem = ITEM_SMOOTH_ROCK,
+    .moves = {MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH}
     },
     {
-    .iv = 255,
-    .lvl = 35,
-    .species = SPECIES_ONIX,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_IRON_TAIL, MOVE_EXPLOSION, MOVE_ROAR, MOVE_ROCK_SLIDE}
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_HARDER,
+    .lvl = 57,
+	.ability = ABILITY_SLOT_1,
+    .species = SPECIES_CRADILY,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_RECOVER, MOVE_GIGA_DRAIN, MOVE_BARRIER, MOVE_AMNESIA}
     },
     {
-    .iv = 255,
-    .lvl = 37,
-    .species = SPECIES_NOSEPASS,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE}
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_HARDER,
+    .lvl = 57,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_AERODACTYL,
+    .heldItem = ITEM_AERODACTYLITE,
+    .moves = {MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_DUAL_WINGBEAT, MOVE_AQUA_TAIL}
+    },
+    {
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_HARDER,
+    .lvl = 57,
+	.ability = ABILITY_SLOT_1,
+    .species = SPECIES_MINIOR,
+    .heldItem = ITEM_WHITE_HERB,
+    .moves = {MOVE_SHELL_SMASH, MOVE_ACROBATICS, MOVE_STONE_EDGE, MOVE_EARTHQUAKE}
+    },
+    {
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_HARDEST,
+    .lvl = 57,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_PROBOPASS,
+    .heldItem = ITEM_AIR_BALLOON,
+    .moves = {MOVE_VOLT_SWITCH, MOVE_DAZZLING_GLEAM, MOVE_EARTH_POWER, MOVE_POWER_GEM}
     }
 };
 
