@@ -174,12 +174,12 @@ static const struct TrainerMon sParty_GruntRusturfTunnel[] = {
 static const struct TrainerMon sParty_GruntWeatherInst1[] = {
     {
     .iv = 0,
-    .lvl = 27,
+    .lvl = 35,
     .species = SPECIES_ZUBAT,
     },
     {
     .iv = 0,
-    .lvl = 27,
+    .lvl = 35,
     .species = SPECIES_POOCHYENA,
     }
 };
@@ -187,12 +187,12 @@ static const struct TrainerMon sParty_GruntWeatherInst1[] = {
 static const struct TrainerMon sParty_GruntWeatherInst2[] = {
     {
     .iv = 0,
-    .lvl = 27,
+    .lvl = 35,
     .species = SPECIES_POOCHYENA,
     },
     {
     .iv = 0,
-    .lvl = 27,
+    .lvl = 35,
     .species = SPECIES_CARVANHA,
     }
 };
@@ -200,17 +200,17 @@ static const struct TrainerMon sParty_GruntWeatherInst2[] = {
 static const struct TrainerMon sParty_GruntWeatherInst3[] = {
     {
     .iv = 0,
-    .lvl = 26,
+    .lvl = 34,
     .species = SPECIES_POOCHYENA,
     },
     {
     .iv = 0,
-    .lvl = 26,
+    .lvl = 34,
     .species = SPECIES_ZUBAT,
     },
     {
     .iv = 0,
-    .lvl = 26,
+    .lvl = 34,
     .species = SPECIES_CARVANHA,
     }
 };
@@ -276,7 +276,7 @@ static const struct TrainerMon sParty_GruntMtPyre3[] = {
 static const struct TrainerMon sParty_GruntWeatherInst4[] = {
     {
     .iv = 0,
-    .lvl = 28,
+    .lvl = 36,
     .species = SPECIES_CARVANHA,
     }
 };
@@ -284,7 +284,7 @@ static const struct TrainerMon sParty_GruntWeatherInst4[] = {
 static const struct TrainerMon sParty_GruntAquaHideout5[] = {
     {
     .iv = 0,
-    .lvl = 36,
+    .lvl = 44,
     .species = SPECIES_CARVANHA,
     }
 };
@@ -292,7 +292,7 @@ static const struct TrainerMon sParty_GruntAquaHideout5[] = {
 static const struct TrainerMon sParty_GruntAquaHideout6[] = {
     {
     .iv = 0,
-    .lvl = 36,
+    .lvl = 44,
     .species = SPECIES_ZUBAT,
     }
 };
@@ -334,12 +334,12 @@ static const struct TrainerMon sParty_Zander[] = {
 static const struct TrainerMon sParty_ShellyWeatherInstitute[] = {
     {
     .iv = 50,
-    .lvl = 28,
+    .lvl = 36,
     .species = SPECIES_CARVANHA,
     },
     {
     .iv = 50,
-    .lvl = 28,
+    .lvl = 36,
     .species = SPECIES_MIGHTYENA,
     }
 };
@@ -7986,12 +7986,12 @@ static const struct TrainerMon sParty_Isabella[] = {
 static const struct TrainerMon sParty_GruntWeatherInst5[] = {
     {
     .iv = 0,
-    .lvl = 27,
+    .lvl = 35,
     .species = SPECIES_ZUBAT,
     },
     {
     .iv = 0,
-    .lvl = 27,
+    .lvl = 35,
     .species = SPECIES_POOCHYENA,
     }
 };
