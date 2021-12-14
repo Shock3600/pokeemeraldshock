@@ -3559,7 +3559,7 @@ static const struct TrainerMon sParty_Winona1[] = {
 	.ability = ABILITY_SLOT_2,
     .species = SPECIES_PELIPPER,
     .heldItem = ITEM_DAMP_ROCK,
-    .moves = {MOVE_ROOST, MOVE_SCALD, MOVE_HURRICANE, MOVE_U_TURN}
+    .moves = {MOVE_ROOST, MOVE_SCALD, MOVE_HURRICANE, MOVE_DEFOG}
     },
     {
     .build = TRAINER_MON_SPEED_PHYS,
@@ -3586,7 +3586,7 @@ static const struct TrainerMon sParty_Winona1[] = {
 	.ability = ABILITY_SLOT_2,
     .species = SPECIES_SKARMORY,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_ROOST, MOVE_SPIKES, MOVE_BODY_PRESS, MOVE_WHIRLWIND}
+    .moves = {MOVE_ROOST, MOVE_IRON_DEFENSE, MOVE_IRON_HEAD, MOVE_BODY_PRESS}
     },
     {
     .build = TRAINER_MON_PHYS,
