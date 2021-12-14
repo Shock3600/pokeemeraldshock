@@ -5324,17 +5324,17 @@ static const struct TrainerMon sParty_Phil[] = {
 static const struct TrainerMon sParty_Jared[] = {
     {
     .iv = 100,
-    .lvl = 27,
+    .lvl = 35,
     .species = SPECIES_DODUO,
     },
     {
     .iv = 100,
-    .lvl = 27,
+    .lvl = 35,
     .species = SPECIES_SKARMORY,
     },
     {
     .iv = 100,
-    .lvl = 27,
+    .lvl = 35,
     .species = SPECIES_TROPIUS,
     }
 };
@@ -5342,7 +5342,7 @@ static const struct TrainerMon sParty_Jared[] = {
 static const struct TrainerMon sParty_Humberto[] = {
     {
     .iv = 250,
-    .lvl = 30,
+    .lvl = 38,
     .species = SPECIES_SKARMORY,
     }
 };
@@ -5363,12 +5363,12 @@ static const struct TrainerMon sParty_Presley[] = {
 static const struct TrainerMon sParty_Edwardo[] = {
     {
     .iv = 150,
-    .lvl = 29,
+    .lvl = 37,
     .species = SPECIES_DODUO,
     },
     {
     .iv = 150,
-    .lvl = 29,
+    .lvl = 37,
     .species = SPECIES_PELIPPER,
     }
 };
@@ -8818,12 +8818,12 @@ static const struct TrainerMon sParty_Riley[] = {
 static const struct TrainerMon sParty_Flint[] = {
     {
     .iv = 150,
-    .lvl = 29,
+    .lvl = 37,
     .species = SPECIES_SWELLOW,
     },
     {
     .iv = 150,
-    .lvl = 29,
+    .lvl = 37,
     .species = SPECIES_XATU,
     }
 };
@@ -8831,17 +8831,17 @@ static const struct TrainerMon sParty_Flint[] = {
 static const struct TrainerMon sParty_Ashley[] = {
     {
     .iv = 100,
-    .lvl = 27,
+    .lvl = 35,
     .species = SPECIES_SWABLU,
     },
     {
     .iv = 100,
-    .lvl = 27,
+    .lvl = 35,
     .species = SPECIES_SWABLU,
     },
     {
     .iv = 100,
-    .lvl = 27,
+    .lvl = 35,
     .species = SPECIES_SWABLU,
     }
 };
@@ -11719,7 +11719,7 @@ static const struct TrainerMon sParty_Angelo[] = {
 static const struct TrainerMon sParty_Darius[] = {
     {
     .iv = 200,
-    .lvl = 30,
+    .lvl = 38,
     .species = SPECIES_TROPIUS,
     }
 };
