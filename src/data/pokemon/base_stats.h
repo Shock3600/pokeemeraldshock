@@ -8253,7 +8253,7 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_SHEDINJA] =
     {
         .baseHP        = 1,
-        .baseAttack    = 130,
+        .baseAttack    = 90,
         .baseDefense   = 45,
         .baseSpeed     = 40,
         .baseSpAttack  = 30,
@@ -8893,7 +8893,7 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_ILLUMISE] =
     {
-        .baseHP        = 95,
+        .baseHP        = 90,
         .baseAttack    = 47,
         .baseSpeed     = 85,
         .baseSpAttack  = 73,
