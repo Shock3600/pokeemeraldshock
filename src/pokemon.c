@@ -6769,7 +6769,7 @@ void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies)
     u8 stat;
     u8 bonus;
 
-    heldItem = GetMonData(mon, MON_DATA_HELD_ITEM, 0);
+    /*heldItem = GetMonData(mon, MON_DATA_HELD_ITEM, 0);
     if (heldItem == ITEM_ENIGMA_BERRY)
     {
         if (gMain.inBattle)
@@ -6857,7 +6857,7 @@ void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies)
         evs[i] += evIncrease;
         totalEVs += evIncrease;
         SetMonData(mon, MON_DATA_HP_EV + i, &evs[i]);
-    }
+    }*/
 }
 
 u16 GetMonEVCount(struct Pokemon *mon)

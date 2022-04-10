@@ -7297,7 +7297,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MONSTER,
         .eggGroup2 = EGG_GROUP_WATER_1,
-        .abilities = {ABILITY_TORRENT, ABILITY_NONE, ABILITY_DAMP},
+        .abilities = {ABILITY_TORRENT, ABILITY_NONE, ABILITY_WATER_VEIL},
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },
@@ -7321,7 +7321,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MONSTER,
         .eggGroup2 = EGG_GROUP_WATER_1,
-        .abilities = {ABILITY_TORRENT, ABILITY_NONE, ABILITY_DAMP},
+        .abilities = {ABILITY_TORRENT, ABILITY_NONE, ABILITY_WATER_VEIL},
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },
@@ -7543,7 +7543,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_BUG,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_SWARM, ABILITY_COMPOUND_EYES, ABILITY_TINTED_LENS},
+            .abilities = {ABILITY_SWARM, ABILITY_NONE, ABILITY_TINTED_LENS},
         #else
             .abilities = {ABILITY_SWARM, ABILITY_NONE},
         #endif
@@ -7597,7 +7597,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroup1 = EGG_GROUP_BUG,
         .eggGroup2 = EGG_GROUP_BUG,
-        .abilities = {ABILITY_SHIELD_DUST, ABILITY_COMPOUND_EYES, ABILITY_UNAWARE},
+        .abilities = {ABILITY_SHIELD_DUST, ABILITY_NONE, ABILITY_UNAWARE},
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },
@@ -9142,12 +9142,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_CAMERUPT] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 110,
-        .baseDefense   = 90,
+        .baseHP        = 70,
+        .baseAttack    = 100,
+        .baseDefense   = 70,
         .baseSpeed     = 40,
-        .baseSpAttack  = 120,
-        .baseSpDefense = 95,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 75,
         .type1 = TYPE_FIRE,
         .type2 = TYPE_GROUND,
         .catchRate = 150,
@@ -9161,7 +9161,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FIELD,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_MAGMA_ARMOR, ABILITY_SHEER_FORCE, ABILITY_ANGER_POINT},
+            .abilities = {ABILITY_MAGMA_ARMOR, ABILITY_SOLID_ROCK, ABILITY_ANGER_POINT},
         #else
             .abilities = {ABILITY_MAGMA_ARMOR, ABILITY_NONE},
         #endif
