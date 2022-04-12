@@ -3366,22 +3366,22 @@ static const struct TrainerMon sParty_Drake[] = {
 
 static const struct TrainerMon sParty_Roxanne1[] = {
     {
-    .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_EASY,
-	.lvl = 12,
-	.ability = ABILITY_HIDDEN,
-    .species = SPECIES_LILEEP,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_MEGA_DRAIN, MOVE_TOXIC, MOVE_LEECH_SEED, MOVE_PROTECT}
-    },
-    {
     .build = TRAINER_MON_SPEED_PHYS,
-	.difficulty = TRAINER_EASY,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 12,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_ANORITH,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_ROCK_THROW, MOVE_X_SCISSOR, MOVE_AQUA_JET, MOVE_BRICK_BREAK}
+    },
+    {
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_MEDIUM,
+	.lvl = 12,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_LILEEP,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_TOXIC, MOVE_LEECH_SEED, MOVE_PROTECT}
     },
     {
     .build = TRAINER_MON_DEFENSES,
@@ -3397,7 +3397,7 @@ static const struct TrainerMon sParty_Roxanne1[] = {
 static const struct TrainerMon sParty_Brawly1[] = {
     {
     .build = TRAINER_MON_SPEED_PHYS,
-	.difficulty = TRAINER_EASY,
+	.difficulty = TRAINER_MEDIUM,
 	.lvl = 18,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_MEDITITE,
@@ -3406,7 +3406,7 @@ static const struct TrainerMon sParty_Brawly1[] = {
     },
     {
     .build = TRAINER_MON_SPEED_PHYS,
-	.difficulty = TRAINER_EASY,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 18,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_MACHOP,
@@ -3454,7 +3454,7 @@ static const struct TrainerMon sParty_Wattson1[] = {
     },
     {
     .build = TRAINER_MON_SPEED_SPEC,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
 	.hiddenPower = TYPE_ICE,
     .lvl = 26,
 	.ability = ABILITY_SLOT_1,
@@ -3494,7 +3494,7 @@ static const struct TrainerMon sParty_Flannery1[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 30,
 	.ability = ABILITY_SLOT_2,
     .species = SPECIES_TORKOAL,
@@ -3506,7 +3506,7 @@ static const struct TrainerMon sParty_Flannery1[] = {
 static const struct TrainerMon sParty_Norman1[] = {
     {
     .build = TRAINER_MON_PHYS,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 32,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_KECLEON,
@@ -3515,7 +3515,7 @@ static const struct TrainerMon sParty_Norman1[] = {
     },
     {
     .build = TRAINER_MON_SPEED_PHYS,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 34,
 	.ability = ABILITY_SLOT_2,
     .species = SPECIES_LINOONE,
@@ -3524,7 +3524,7 @@ static const struct TrainerMon sParty_Norman1[] = {
     },
     {
     .build = TRAINER_MON_SPEED_PHYS,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 34,
 	.ability = ABILITY_SLOT_2,
     .species = SPECIES_DODRIO,
@@ -3533,7 +3533,7 @@ static const struct TrainerMon sParty_Norman1[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 32,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_WIGGLYTUFF,
@@ -3542,7 +3542,7 @@ static const struct TrainerMon sParty_Norman1[] = {
     },
     {
     .build = TRAINER_MON_PHYS,
-	.difficulty = TRAINER_HARDER,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 36,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_SLAKING,
@@ -3554,7 +3554,7 @@ static const struct TrainerMon sParty_Norman1[] = {
 static const struct TrainerMon sParty_Winona1[] = {
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 37,
 	.ability = ABILITY_SLOT_2,
     .species = SPECIES_PELIPPER,
@@ -3563,7 +3563,7 @@ static const struct TrainerMon sParty_Winona1[] = {
     },
     {
     .build = TRAINER_MON_SPEED_PHYS,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 37,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_TROPIUS,
@@ -3572,7 +3572,7 @@ static const struct TrainerMon sParty_Winona1[] = {
     },
     {
     .build = TRAINER_MON_SPEED_PHYS,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 39,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_GYARADOS,
@@ -3581,7 +3581,7 @@ static const struct TrainerMon sParty_Winona1[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 39,
 	.ability = ABILITY_SLOT_2,
     .species = SPECIES_SKARMORY,
@@ -3590,7 +3590,7 @@ static const struct TrainerMon sParty_Winona1[] = {
     },
     {
     .build = TRAINER_MON_PHYS,
-	.difficulty = TRAINER_HARDER,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 41,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_ALTARIA,
@@ -3602,7 +3602,7 @@ static const struct TrainerMon sParty_Winona1[] = {
 static const struct TrainerMon sParty_TateAndLiza1[] = {
     {
     .build = TRAINER_MON_SPEED_SPEC,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 42,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_STARMIE,
@@ -3611,7 +3611,7 @@ static const struct TrainerMon sParty_TateAndLiza1[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 42,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_GIRAFARIG,
@@ -3620,7 +3620,7 @@ static const struct TrainerMon sParty_TateAndLiza1[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 44,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_CLAYDOL,
@@ -3629,7 +3629,7 @@ static const struct TrainerMon sParty_TateAndLiza1[] = {
     },
     {
     .build = TRAINER_MON_SPEED_SPEC,
-	.difficulty = TRAINER_HARD,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 44,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_ALAKAZAM,
@@ -3638,7 +3638,7 @@ static const struct TrainerMon sParty_TateAndLiza1[] = {
     },
     {
     .build = TRAINER_MON_SPEC,
-	.difficulty = TRAINER_HARDEST,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 46,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_GARDEVOIR,
@@ -3647,7 +3647,7 @@ static const struct TrainerMon sParty_TateAndLiza1[] = {
     },
     {
     .build = TRAINER_MON_SPEED_PHYS,
-	.difficulty = TRAINER_HARDEST,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 46,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_GALLADE,
@@ -3659,7 +3659,7 @@ static const struct TrainerMon sParty_TateAndLiza1[] = {
 static const struct TrainerMon sParty_Juan1[] = {
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARDER,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 47,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_PELIPPER,
@@ -3668,7 +3668,7 @@ static const struct TrainerMon sParty_Juan1[] = {
     },
     {
     .build = TRAINER_MON_PHYS,
-	.difficulty = TRAINER_HARDER,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 47,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_CRAWDAUNT,
@@ -3677,7 +3677,7 @@ static const struct TrainerMon sParty_Juan1[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARDER,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 47,
 	.ability = ABILITY_SLOT_2,
     .species = SPECIES_LANTURN,
@@ -3686,7 +3686,7 @@ static const struct TrainerMon sParty_Juan1[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARDER,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 49,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_AZUMARILL,
@@ -3695,7 +3695,7 @@ static const struct TrainerMon sParty_Juan1[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARDEST,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 49,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_SWAMPERT,
@@ -3704,7 +3704,7 @@ static const struct TrainerMon sParty_Juan1[] = {
     },
     {
     .build = TRAINER_MON_SPEED_PHYS,
-	.difficulty = TRAINER_HARDEST,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 51,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_GYARADOS,
@@ -6887,6 +6887,7 @@ static const struct TrainerMon sParty_BrendanRoute103Mudkip[] = {
     .iv = 0,
     .lvl = 5,
     .species = SPECIES_TREECKO,
+    .moves = {MOVE_TACKLE, MOVE_GROWL},
     }
 };
 
@@ -6931,6 +6932,7 @@ static const struct TrainerMon sParty_BrendanRoute103Treecko[] = {
     .iv = 0,
     .lvl = 5,
     .species = SPECIES_TORCHIC,
+    .moves = {MOVE_SCRATCH, MOVE_GROWL},
     }
 };
 
@@ -6975,6 +6977,7 @@ static const struct TrainerMon sParty_BrendanRoute103Torchic[] = {
     .iv = 0,
     .lvl = 5,
     .species = SPECIES_MUDKIP,
+    .moves = {MOVE_TACKLE, MOVE_GROWL},
     }
 };
 
@@ -7020,7 +7023,7 @@ static const struct TrainerMon sParty_MayRoute103Mudkip[] = {
     .lvl = 5,
     .species = SPECIES_TREECKO,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_POUND, MOVE_LEAFAGE, MOVE_LEER},
+    .moves = {MOVE_TACKLE, MOVE_GROWL},
     }
 };
 
@@ -7065,6 +7068,7 @@ static const struct TrainerMon sParty_MayRoute103Treecko[] = {
     .iv = 0,
     .lvl = 5,
     .species = SPECIES_TORCHIC,
+    .moves = {MOVE_SCRATCH, MOVE_GROWL},
     }
 };
 
@@ -7109,6 +7113,7 @@ static const struct TrainerMon sParty_MayRoute103Torchic[] = {
     .iv = 0,
     .lvl = 5,
     .species = SPECIES_MUDKIP,
+    .moves = {MOVE_TACKLE, MOVE_GROWL},
     }
 };
 
@@ -10404,7 +10409,7 @@ static const struct TrainerMon sParty_MayRustboroTorchic[] = {
 static const struct TrainerMon sParty_Roxanne2[] = {
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARDER,
+	.difficulty = TRAINER_MEDIUM,
 	.lvl = 57,
 	.ability = ABILITY_SLOT_2,
     .species = SPECIES_GIGALITH,
@@ -10413,7 +10418,7 @@ static const struct TrainerMon sParty_Roxanne2[] = {
     },
     {
     .build = TRAINER_MON_PHYS,
-	.difficulty = TRAINER_HARDER,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 57,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_TYRANITAR,
@@ -10422,7 +10427,7 @@ static const struct TrainerMon sParty_Roxanne2[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARDER,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 57,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_CRADILY,
@@ -10431,7 +10436,7 @@ static const struct TrainerMon sParty_Roxanne2[] = {
     },
     {
     .build = TRAINER_MON_SPEED_PHYS,
-	.difficulty = TRAINER_HARDER,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 57,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_AERODACTYL,
@@ -10440,7 +10445,7 @@ static const struct TrainerMon sParty_Roxanne2[] = {
     },
     {
     .build = TRAINER_MON_SPEED_PHYS,
-	.difficulty = TRAINER_HARDER,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 57,
 	.ability = ABILITY_SLOT_1,
     .species = SPECIES_MINIOR,
@@ -10449,7 +10454,7 @@ static const struct TrainerMon sParty_Roxanne2[] = {
     },
     {
     .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_HARDEST,
+	.difficulty = TRAINER_MEDIUM,
     .lvl = 57,
 	.ability = ABILITY_HIDDEN,
     .species = SPECIES_PROBOPASS,
