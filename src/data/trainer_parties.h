@@ -3366,15 +3366,6 @@ static const struct TrainerMon sParty_Drake[] = {
 
 static const struct TrainerMon sParty_Roxanne1[] = {
     {
-    .build = TRAINER_MON_DEFENSES,
-	.difficulty = TRAINER_MEDIUM,
-	.lvl = 12,
-	.ability = ABILITY_HIDDEN,
-    .species = SPECIES_LILEEP,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_MEGA_DRAIN, MOVE_TOXIC, MOVE_LEECH_SEED, MOVE_PROTECT}
-    },
-    {
     .build = TRAINER_MON_SPEED_PHYS,
 	.difficulty = TRAINER_MEDIUM,
     .lvl = 12,
@@ -3382,6 +3373,15 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     .species = SPECIES_ANORITH,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_ROCK_THROW, MOVE_X_SCISSOR, MOVE_AQUA_JET, MOVE_BRICK_BREAK}
+    },
+    {
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_MEDIUM,
+	.lvl = 12,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_LILEEP,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_TOXIC, MOVE_LEECH_SEED, MOVE_PROTECT}
     },
     {
     .build = TRAINER_MON_DEFENSES,
