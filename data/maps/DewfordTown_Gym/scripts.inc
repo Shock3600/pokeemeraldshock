@@ -144,7 +144,7 @@ DewfordTown_Gym_EventScript_StopCountingTrainers::
 	return
 
 DewfordTown_Gym_EventScript_Brawly::
-	trainerbattle_single TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
+	goto_if_unset FLAG_BADGE02_GET, DewfordTown_Gym_EventScript_Brawly_Battle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	compare VAR_RESULT, TRUE
 	goto_if_eq DewfordTown_Gym_EventScript_BrawlyRematch
@@ -152,6 +152,35 @@ DewfordTown_Gym_EventScript_Brawly::
 	msgbox DewfordTown_Gym_Text_BrawlyPostBattle, MSGBOX_DEFAULT
 	release
 	end
+
+DewfordTown_Gym_EventScript_Brawly_Battle::
+	goto_if_set FLAG_BADGE08_GET, DewfordTown_Gym_EventScript_Brawly_Battle_5
+	goto_if_set FLAG_BADGE07_GET, DewfordTown_Gym_EventScript_Brawly_Battle_4
+	goto_if_set FLAG_BADGE06_GET, DewfordTown_Gym_EventScript_Brawly_Battle_3
+	goto_if_set FLAG_BADGE05_GET, DewfordTown_Gym_EventScript_Brawly_Battle_2
+	goto_if_set FLAG_BADGE03_GET, DewfordTown_Gym_EventScript_Brawly_Battle_1
+	return
+
+DewfordTown_Gym_EventScript_Brawly_Battle_1::
+	trainerbattle_single TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
+	end
+
+DewfordTown_Gym_EventScript_Brawly_Battle_2::
+	trainerbattle_single TRAINER_BRAWLY_2, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
+	end
+
+DewfordTown_Gym_EventScript_Brawly_Battle_3::
+	trainerbattle_single TRAINER_BRAWLY_3, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
+	end
+
+DewfordTown_Gym_EventScript_Brawly_Battle_4::
+	trainerbattle_single TRAINER_BRAWLY_4, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
+	end
+
+DewfordTown_Gym_EventScript_Brawly_Battle_5::
+	trainerbattle_single TRAINER_BRAWLY_5, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
+	end
+	
 
 DewfordTown_Gym_EventScript_BrawlyDefeated::
 	call DewfordTown_Gym_EventScript_AnimateFlashFullBrightness

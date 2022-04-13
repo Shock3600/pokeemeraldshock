@@ -3439,7 +3439,7 @@ static const struct TrainerMon sParty_Wattson1[] = {
 	.difficulty = TRAINER_MEDIUM,
     .lvl = 22,
 	.ability = ABILITY_SLOT_1,
-    .species = SPECIES_PIKACHU,
+    .species = SPECIES_RAICHU,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_THUNDERBOLT, MOVE_SURF, MOVE_GRASS_KNOT, MOVE_EXTREME_SPEED}
     },
@@ -10586,63 +10586,88 @@ static const struct TrainerMon sParty_Roxanne5[] = {
 
 static const struct TrainerMon sParty_Brawly2[] = {
     {
-    .iv = 255,
-    .lvl = 33,
-    .species = SPECIES_MACHAMP,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_KARATE_CHOP, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH, MOVE_BULK_UP}
-    },
-    {
-    .iv = 255,
-    .lvl = 33,
-    .species = SPECIES_MEDITITE,
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_MEDIUM,
+	.lvl = 26,
+	.ability = ABILITY_SLOT_2,
+    .species = SPECIES_MACHOKE,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_FOCUS_PUNCH}
+    .moves = {MOVE_DYNAMIC_PUNCH, MOVE_POISON_JAB, MOVE_BULLET_PUNCH, MOVE_THUNDER_PUNCH}
     },
     {
-    .iv = 255,
-    .lvl = 35,
-    .species = SPECIES_HITMONTOP,
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_MEDIUM,
+    .lvl = 28,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_COMBUSKEN,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK}
+    .moves = {MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_SHADOW_CLAW, MOVE_FLARE_BLITZ}
     },
     {
-    .iv = 255,
-    .lvl = 37,
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_MEDIUM,
+    .lvl = 28,
+	.ability = ABILITY_SLOT_2,
+    .species = SPECIES_BRELOOM,
+    .heldItem = ITEM_TOXIC_ORB,
+    .moves = {MOVE_SPORE, MOVE_LEECH_SEED, MOVE_CLOSE_COMBAT, MOVE_THUNDER_PUNCH}
+    },
+    {
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_MEDIUM,
+    .lvl = 30,
+	.ability = ABILITY_SLOT_1,
     .species = SPECIES_HARIYAMA,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_FAKE_OUT, MOVE_FOCUS_PUNCH, MOVE_BELLY_DRUM, MOVE_EARTHQUAKE}
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_KNOCK_OFF, MOVE_HEAVY_SLAM, MOVE_STONE_EDGE}
     }
 };
 
 static const struct TrainerMon sParty_Brawly3[] = {
     {
-    .iv = 255,
-    .lvl = 38,
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_MEDIUM,
+	.lvl = 37,
+	.ability = ABILITY_SLOT_1,
     .species = SPECIES_MACHAMP,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_KARATE_CHOP, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH, MOVE_BULK_UP}
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_KNOCK_OFF, MOVE_FACADE, MOVE_BULLET_PUNCH}
     },
     {
-    .iv = 255,
-    .lvl = 38,
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_MEDIUM,
+    .lvl = 28,
+	.ability = ABILITY_HIDDEN,
+    .species = SPECIES_COMBUSKEN,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_SHADOW_CLAW, MOVE_FLARE_BLITZ}
+    },
+    {
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_MEDIUM,
+    .lvl = 28,
+	.ability = ABILITY_SLOT_2,
+    .species = SPECIES_BRELOOM,
+    .heldItem = ITEM_TOXIC_ORB,
+    .moves = {MOVE_SPORE, MOVE_LEECH_SEED, MOVE_CLOSE_COMBAT, MOVE_THUNDER_PUNCH}
+    },
+    {
+    .build = TRAINER_MON_SPEED_PHYS,
+	.difficulty = TRAINER_MEDIUM,
+    .lvl = 28,
+	.ability = ABILITY_SLOT_2,
     .species = SPECIES_MEDICHAM,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_FOCUS_PUNCH}
+    .heldItem = ITEM_MEDICHAMITE,
+    .moves = {MOVE_FAKE_OUT, MOVE_ZEN_HEADBUTT, MOVE_THUNDER_PUNCH, MOVE_BULLET_PUNCH}
     },
     {
-    .iv = 255,
-    .lvl = 40,
-    .species = SPECIES_HITMONTOP,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK}
-    },
-    {
-    .iv = 255,
-    .lvl = 42,
+    .build = TRAINER_MON_DEFENSES,
+	.difficulty = TRAINER_MEDIUM,
+    .lvl = 41,
+	.ability = ABILITY_SLOT_1,
     .species = SPECIES_HARIYAMA,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_FAKE_OUT, MOVE_FOCUS_PUNCH, MOVE_BELLY_DRUM, MOVE_EARTHQUAKE}
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_KNOCK_OFF, MOVE_HEAVY_SLAM, MOVE_STONE_EDGE}
     }
 };
 
